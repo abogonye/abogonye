@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1 id="header">technology</h1>
+    <p id="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae similique officia nam eveniet dicta asperiores maxime, assumenda dolores deleniti quia, veritatis possimus earum. Ipsam pariatur doloremque, deserunt accusamus ut natus!</p><br>
+        
+       
+        
+         <input type="number" id="box1" required placeholder="number"> 
+         <input type="number" id="box2" required placeholder="number">
+         <input type="number" id="answer" readonly placeholder="answer">
+         <button onclick="add()">add</button>
+         
+        <button onclick="alert('your message come here')">click me</button>
+        <a href="index.html">clickhere</a>       
+         <script>
+            document.getElementById("header").innerHTML=+2348131024247
+            document.getElementById("footer").innerHTML="We Rise By Lifting Others"
+            document.getElementById("header").style.color="blue"
+            
+        function addnumber(firstnumber,secondnumber){
+            return firstnumber-secondnumber
+        }
+        document.write(addnumber(22,2))
+
+        function add(){
+            var box1=document.getElementById("box1").value 
+            var box2=document.getElementById("box2").value
+            var sum= Number(box1) + Number(box2)
+            document.getElementById ("answer").value=sum
+
+        }
+
+         </script>
+</body>
+</html>
